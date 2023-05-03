@@ -1,0 +1,15 @@
+<?php 
+
+// Triangle Upside Left
+function cetak_pattern_segitiga_upside_left($tinggi, $symbol = "*") {
+    // loop untuk mencetak baris
+    for ($i = $tinggi; $i >= 1; $i--) {
+        // loop untuk mencetak simbol
+        for ($j = 1; $j <= $i; $j++) {
+            echo $symbol . " ";
+        }
+        echo "<br>";
+    }
+}
+cetak_pattern_segitiga_upside_left(15, "*"); 
+?>
